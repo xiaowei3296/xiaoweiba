@@ -1,0 +1,14 @@
+{
+  "name": "reactgit",
+  "version": "1.0.0",
+  "description": "test reactgit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server --filse *.*"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
