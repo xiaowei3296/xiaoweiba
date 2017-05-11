@@ -4,11 +4,15 @@
   "description": "test reactgit",
   "main": "index.js",
   "scripts": {
-    "dev": "browser-sync start --server --filse *.*"
+    "dev": "browser-sync start --server --filse \"*.*\""
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.18.8"
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }
