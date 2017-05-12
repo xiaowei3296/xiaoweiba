@@ -1,17 +1,30 @@
 {
-  "name": "reactgit",
+  "name": "xiaoweiba",
   "version": "1.0.0",
-  "description": "test reactgit",
+  "description": "xiaoweiba",
   "main": "index.js",
   "scripts": {
-    "dev": "browser-sync start --server --filse \"*.*\""
+    "build": "browserify -t [babelify --preset [react]] index.js -o bundle.js",
+    "build-dist": "NODE_ENV=production  browserify  index.js | uglifyjs  -m  >  bundle.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaowei3296/xiaoweiba.git"
+  },
+  "keywords": [
+    "简历，小伟，小尾巴，前端工程师"
+  ],
+  "author": "我的测试",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaowei3296/xiaoweiba/issues"
+  },
+  "homepage": "https://github.com/xiaowei3296/xiaoweiba#readme",
   "dependencies": {
+    "babel": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
-    "browser-sync": "^2.18.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }
